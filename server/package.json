@@ -28,6 +28,7 @@
     "express-async-handler": "^1.2.0",
     "firebase": "^10.13.1",
     "handlebars": "^4.7.8",
+    "jsonwebtoken": "^9.0.2",
     "nanoid": "^5.0.7",
     "nodemailer": "^6.9.14",
     "nodemailer-juice": "^1.0.1",

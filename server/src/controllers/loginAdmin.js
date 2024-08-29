@@ -4,6 +4,8 @@
  * @version     1.0   
  */
 
+const asyncHandler = require('express-async-handler');
+
 /**
  * @description Login Admin
  * @route POST /api/admin/login
