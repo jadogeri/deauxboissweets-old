@@ -18,7 +18,6 @@ pass: creds.pass,
 },
 }).use('compile', inLineCss());
 
-
 const EmailTemplate = require('email-templates').EmailTemplate
 const path = require('path')
 const Promise = require('bluebird');
