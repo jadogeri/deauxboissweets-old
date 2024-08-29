@@ -1,8 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
+import Routes from './routes/ProjectRoutes';
 
 function App() {
-  return (
+  return (    
+    <Routes />
+
+   
+  );
+}
+
+export default App;
+/**
+ * {/*}
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -18,8 +28,5 @@ function App() {
           Learn React
         </a>
       </header>
-    </div>
-  );
-}
-
-export default App;
+    </div> 
+ */
