@@ -1,7 +1,7 @@
 import React from "react";
 import { CiUser } from "react-icons/ci";
 import { RiLockPasswordLine } from "react-icons/ri";
-export const Signup = () => {
+export const Signup_1 = () => {
   return (
     <div>
       <div className="text-center py-4">

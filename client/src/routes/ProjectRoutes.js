@@ -1,12 +1,12 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import  ProtectedRoutes  from "./ProtectedRoutes";
 import React from 'react'
-import ForgotPassword from "../pages/ForgotPassword.js";
-import Login from "../pages/Login.js"
-import ResetPassword from "../pages/ResetPassword.js"
-import NoPage from '../pages/NoPage.js';
-import DashBoard from '../pages/DashBoard.js'
-import Home from '../pages/Home.js'
+import ForgotPassword from "../pages/ForgotPassword.jsx";
+import Login from "../pages/Login.jsx"
+import ResetPassword from "../pages/ResetPassword.jsx"
+import NoPage from '../pages/NoPage.jsx';
+import DashBoard from '../pages/DashBoard.jsx'
+import Home from '../pages/Home.jsx'
 import { Registration } from "../pages/Registration.jsx";
 
 

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Login } from "./Login.jsx";
-import { Signup } from "./Signup";
+import { Login_1 } from "./Login_1.jsx";
+import { Signup_1 } from "./Signup_1.jsx";
 import logo from "../assets/logo.jpg"
 import { FaFacebookF } from "react-icons/fa";
 import { FaGoogle } from "react-icons/fa";
@@ -9,7 +9,7 @@ export const Registration = () => {
   return (
     <div className="px-4 max-w-7xl mx-auto lg:space-x-20 flex justify-center items-center h-screen">
       <div className="lg:w-[40%]">
-      {isLogin ? <Login /> : <Signup />}
+      {isLogin ? <Login_1 /> : <Signup_1 />}
         <div className="pb-4 text-sm flex items-center justify-between">
             <p>{isLogin ? "Don't have an account?" : 'Already have an account?'}</p>
             <button onClick={() => setIsLogin(!isLogin)} className="font-semibold underline">{isLogin ? 'Sign up' : 'Login'}</button>
