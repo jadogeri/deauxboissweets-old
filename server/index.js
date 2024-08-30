@@ -5,10 +5,9 @@ const bodyParser = require("body-parser")
 const { corsOptions } = require("./src/configs/cors")
 const { errorHandler } = require('./src/middlewares/errorHandler');
 const { initializeApp } = require("firebase/app")
-const { getFirestore, Firestore,getDocs, getDoc, collection } = require("firebase/firestore")
+const { getFirestore, getDocs, getDoc, collection } = require("firebase/firestore")
 
 dotenv.config();
-
 
 
 // Import the functions you need from the SDKs you need
@@ -25,11 +24,13 @@ const firebaseobj = initializeApp(firebaseConfig);
 //init Firestore
 
 const db = getFirestore(); 
-console.log(JSON.stringify(firebaseobj))
+//console.log(JSON.stringify(firebaseobj))
 
 
 // collection ref
 const colRef = collection(db, 'orders')
+
+//console.log(colRef)
 
 
 getDocs(colRef)
@@ -37,6 +38,7 @@ getDocs(colRef)
     // console.log(snapshot.docs)
     let books = []
     snapshot.docs.forEach(doc => {
+      console.log(doc)
       books.push({ ...doc.data(), id: doc.id })
     })
     console.log(books)
@@ -51,6 +53,7 @@ const app = express();
 const port = process.env.PORT || 5500;
 
  
+
 app.use(express.json());
 app.use("/api/admin", require("./src/routes/adminRoutes"));
 app.use(cors(corsOptions)) // Use this after the variable declaration
